@@ -1,15 +1,15 @@
 import React,  {useState} from "react";
 import { states, departments } from "../../data/data";
 import { useNavigate } from "react-router-dom";
-import Modal from "../Modal/Modal";
+import Modal from "modal-component-selsabil";
 import "../Form/Fom.css"
 import { useGlobalState } from "../../state";
+
 export default function Form(){
   const navigate = useNavigate();
 
   const [employees, setEmployees] = useGlobalState("employee");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log(isModalOpen); // This should log true after form submission
 
   /*formData est un état qui contient les informations du formulaire
    avec des champs vides par défaut. */
@@ -24,6 +24,11 @@ export default function Form(){
     state: "",
     zipCode: "",
   });
+  /**
+   * Handles changes to form inputs.
+   *
+   * @param {Event} e - The event triggered by input changes.
+   */
   /*handleAddFormChange est une fonction qui gère les changements
    dans les champs du formulaire. et met a jour formData */
   const handleAddFormChange = (e) => {
@@ -38,6 +43,11 @@ export default function Form(){
     setFormData(newFormData);
   };
 
+  /**
+   * Handles form submission to add a new employee.
+   *
+   * @param {Event} e - The event triggered by form submission.
+   */
   /*soumission du formulaire */
   const handleAddFormSubmit = (e) => {
     e.preventDefault();
@@ -49,6 +59,7 @@ export default function Form(){
       department: formData.department,
       dateOfBirth: formData.dateOfBirth,
       street: formData.street,
+      state: formData.state,
       city: formData.city,
       zipCode: formData.zipCode,
     };
@@ -56,7 +67,7 @@ export default function Form(){
     const newEmployees = [...employees, newEmployee];
     setEmployees(newEmployees);
     setIsModalOpen(true);
-
+    console.log(handleAddFormSubmit);
     const form = e.target;
     form.reset();
   };

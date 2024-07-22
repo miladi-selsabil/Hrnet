@@ -4,6 +4,7 @@ import "../../Component/Form/Fom.css";
 import DataTable from "react-data-table-component";
 import { useGlobalState } from "../../state";
 import { useNavigate } from "react-router-dom";
+//FilterComponent is a functional component that renders an input field for filtering the employee table.
 const FilterComponent = ({ filterText, setFilterText }) => (
   <input
     type="text"
@@ -13,10 +14,12 @@ const FilterComponent = ({ filterText, setFilterText }) => (
     className="search-input"
   />
 );
+ // component that renders a table of employee data with filtering and pagination.  
 const EmployeeTable = () => {
   const navigate = useNavigate();
   const [employees] = useGlobalState("employee");
   const [filterText, setFilterText] = React.useState("");
+  // Filter employees based on the filter text
   const filteredItems = Array.isArray(employees)
     ? employees.filter(
         (item) =>
@@ -44,17 +47,36 @@ const EmployeeTable = () => {
       )
     : [];
 
+  // Define columns for the DataTable
   const columns = [
-    {name: "First Name",selector: (value) => value.firstname,sortable: true},
-    { name: "Last Name", selector: (value) => value.lastname, sortable: true},
-    {name: "Start Date",selector: (value) => value.startDate, sortable: true},
-    {name: "Department",selector: (value) => value.department,sortable: true},
-    {name: "Date of Birth",selector: (value) => value.dateOfBirth, sortable: true},
-    {name: "Street", selector: (value) => value.street, sortable: true },
-    {name: "City", selector: (value) => value.city, sortable: true },
-    {name: "State", selector: (value) => value.state, sortable: true },
-    {name: "Zip Code", selector: (value) => value.zipCode, sortable: true },
+    {
+      name: "First Name",
+      selector: (value) => value.firstname,
+      sortable: true,
+    },
+    { name: "Last Name", selector: (value) => value.lastname, sortable: true },
+    {
+      name: "Start Date",
+      selector: (value) => value.startDate,
+      sortable: true,
+    },
+    {
+      name: "Department",
+      selector: (value) => value.department,
+      sortable: true,
+    },
+    {
+      name: "Date of Birth",
+      selector: (value) => value.dateOfBirth,
+      sortable: true,
+    },
+    { name: "Street", selector: (value) => value.street, sortable: true },
+    { name: "City", selector: (value) => value.city, sortable: true },
+    { name: "State", selector: (value) => value.state, sortable: true },
+    { name: "Zip Code", selector: (value) => value.zipCode, sortable: true },
   ];
+
+  // Memoize the subheader component to optimize performance
   const subHeaderComponentMemo = React.useMemo(() => {
     return (
       <FilterComponent filterText={filterText} setFilterText={setFilterText} />
