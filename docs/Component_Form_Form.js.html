@@ -1,4 +1,32 @@
-import React,  {useState} from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Component/Form/Form.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Component/Form/Form.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React,  {useState} from "react";
 import { states, departments } from "../../data/data";
 import { useNavigate } from "react-router-dom";
 import Modal from "modal-component-selsabil";
@@ -69,138 +97,160 @@ export default function Form(){
   };
 
   return (
-    <main>
-      <section className="formContent">
-        <div className="title">
-          <h1>HRnet</h1>
-        </div>
-        <button
+    &lt;main>
+      &lt;section className="formContent">
+        &lt;div className="title">
+          &lt;h1>HRnet&lt;/h1>
+        &lt;/div>
+        &lt;button
           className="button"
           onClick={() => navigate("employee-list")}
           aria-label="Navigate to employee list page"
         >
           Employee List
-        </button>
-        <h2>Create Employee</h2>
-        <form className="form" onSubmit={handleAddFormSubmit}>
-          <div className="formUpperPart">
-            <label className="formLabel">
+        &lt;/button>
+        &lt;h2>Create Employee&lt;/h2>
+        &lt;form className="form" onSubmit={handleAddFormSubmit}>
+          &lt;div className="formUpperPart">
+            &lt;label className="formLabel">
               First name
-              <input
+              &lt;input
                 className="formInput"
                 type="text"
                 name="firstname"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-            <label className="formLabel">
+            &lt;/label>
+            &lt;label className="formLabel">
               Last name
-              <input
+              &lt;input
                 className="formInput"
                 type="text"
                 name="lastname"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-            <label className="formLabel">
+            &lt;/label>
+            &lt;label className="formLabel">
               dateOfBirth
-              <input
+              &lt;input
                 className="formInput"
                 type="date"
                 name="dateOfBirth"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-            <label className="formLabel">
+            &lt;/label>
+            &lt;label className="formLabel">
               Start Date
-              <input
+              &lt;input
                 className="formInput"
                 type="date"
                 name="startDate"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-          </div>
-          <div className="fieldset">
-            <label className="formLabel">
+            &lt;/label>
+          &lt;/div>
+          &lt;div className="fieldset">
+            &lt;label className="formLabel">
               street
-              <input
+              &lt;input
                 className="formInput"
                 type="text"
                 name="street"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-            <label className="formLabel">
+            &lt;/label>
+            &lt;label className="formLabel">
               city
-              <input
+              &lt;input
                 className="formInput"
                 type="text"
                 name="city"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-            <label className="formLabel">
+            &lt;/label>
+            &lt;label className="formLabel">
               State
-              <select
+              &lt;select
                 className="formInput"
                 name="state"
                 onChange={handleAddFormChange}
                 required
               >
-                <option value=""></option>
+                &lt;option value="">&lt;/option>
                 {states.map((state, index) => {
                   return (
-                    <option key={index} value={state.value}>
+                    &lt;option key={index} value={state.value}>
                       {state.label}
-                    </option>
+                    &lt;/option>
                   );
                 })}
-              </select>
-            </label>
-            <label className="formLabel">
+              &lt;/select>
+            &lt;/label>
+            &lt;label className="formLabel">
               Zip Code
-              <input
+              &lt;input
                 className="formInput"
                 type="text"
                 name="zipCode"
                 onChange={handleAddFormChange}
                 required
               />
-            </label>
-          </div>
-          <label className="formLabel">
+            &lt;/label>
+          &lt;/div>
+          &lt;label className="formLabel">
             Departement
-            <select
+            &lt;select
               className="formSelect"
               name="department"
               onChange={handleAddFormChange}
               required
             >
-              <option value=""></option>
+              &lt;option value="">&lt;/option>
               {departments.map((department, index) => {
                 return (
-                  <option key={index} value={department}>
+                  &lt;option key={index} value={department}>
                     {department}
-                  </option>
+                  &lt;/option>
                 );
               })}
-            </select>
-          </label>
-          <button type="submit" className="button">
+            &lt;/select>
+          &lt;/label>
+          &lt;button type="submit" className="button">
             Save
-          </button>
-        </form>
-        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <p>New Employee Successfuly Created !</p>
-        </Modal>
-      </section>
-    </main>
+          &lt;/button>
+        &lt;/form>
+        &lt;Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          &lt;p>New Employee Successfuly Created !&lt;/p>
+        &lt;/Modal>
+      &lt;/section>
+    &lt;/main>
   );
-}
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#EmployeeTable">EmployeeTable</a></li><li><a href="global.html#router">router</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.3</a> on Wed Jul 24 2024 14:57:30 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
