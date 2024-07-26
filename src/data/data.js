@@ -78,7 +78,7 @@ export const employeesListInit = [
     dateOfBirth: "1990-11-18",
     street: "242 Park Ave",
     city: "San Diego",
-    state: "California",
+    state: "CA",
     zipCode: "92101",
   },
   {
@@ -89,7 +89,7 @@ export const employeesListInit = [
     dateOfBirth: "1985-05-22",
     street: "3886 University Drive",
     city: "Chicago",
-    state: "Illinois",
+    state: "IL",
     zipCode: "60601",
   },
   {
@@ -100,7 +100,7 @@ export const employeesListInit = [
     dateOfBirth: "1992-02-09",
     street: "7202 Maple Court",
     city: "Miami",
-    state: "Florida",
+    state: "FL",
     zipCode: "33101",
   },
   {
@@ -111,7 +111,7 @@ export const employeesListInit = [
     dateOfBirth: "1988-07-14",
     street: "4788 Poplar Dr",
     city: "Austin",
-    state: "Texas",
+    state: "TX",
     zipCode: "73301",
   },
   {
@@ -122,7 +122,7 @@ export const employeesListInit = [
     dateOfBirth: "1983-03-23",
     street: "9334 Jefferson Street",
     city: "Phoenix",
-    state: "Arizona",
+    state: "AZ",
     zipCode: "85001",
   },
   {
@@ -133,7 +133,7 @@ export const employeesListInit = [
     dateOfBirth: "1979-11-16",
     street: "1968 North Bend Road",
     city: "Seattle",
-    state: "Washington",
+    state: "WA",
     zipCode: "98101",
   },
   {
@@ -144,7 +144,7 @@ export const employeesListInit = [
     dateOfBirth: "1994-04-30",
     street: "6629 Spring St.",
     city: "New York",
-    state: "New York",
+    state: "NY",
     zipCode: "10001",
   },
   {
@@ -155,7 +155,7 @@ export const employeesListInit = [
     dateOfBirth: "1986-09-18",
     street: "3493 Beechwood Drive",
     city: "Pittsburgh",
-    state: "Pennsylvania",
+    state: "PA",
     zipCode: "15201",
   },
   {
@@ -166,7 +166,7 @@ export const employeesListInit = [
     dateOfBirth: "1991-06-01",
     street: "8052 Prospect Ave.",
     city: "Las Vegas",
-    state: "Nevada",
+    state: "NV",
     zipCode: "89101",
   },
   {
@@ -177,7 +177,7 @@ export const employeesListInit = [
     dateOfBirth: "1987-10-07",
     street: "4562 Mulberry Avenue",
     city: "Portland",
-    state: "Oregon",
+    state: "OR",
     zipCode: "97201",
   },
   {
@@ -188,7 +188,7 @@ export const employeesListInit = [
     dateOfBirth: "1998-03-12",
     street: "Jean Mace",
     city: "Fontenay",
-    state: "California",
+    state: "CA",
     zipCode: "94120",
   },
   {
@@ -199,7 +199,7 @@ export const employeesListInit = [
     dateOfBirth: "1985-04-10",
     street: "Rue des Lilas",
     city: "Paris",
-    state: "Texas",
+    state: "TX",
     zipCode: "75020",
   },
   {
@@ -210,7 +210,7 @@ export const employeesListInit = [
     dateOfBirth: "1992-06-05",
     street: "Avenue de la République",
     city: "Lyon",
-    state: "Florida",
+    state: "FL",
     zipCode: "69000",
   },
   {
@@ -221,7 +221,7 @@ export const employeesListInit = [
     dateOfBirth: "1978-08-22",
     street: "Boulevard Saint-Michel",
     city: "Marseille",
-    state: "Nevada",
+    state: "NV",
     zipCode: "13000",
   },
   {
@@ -232,7 +232,7 @@ export const employeesListInit = [
     dateOfBirth: "1989-12-18",
     street: "Rue de la Paix",
     city: "Toulouse",
-    state: "New York",
+    state: "NY",
     zipCode: "31000",
   },
   {
@@ -243,7 +243,7 @@ export const employeesListInit = [
     dateOfBirth: "1995-01-30",
     street: "Rue Victor Hugo",
     city: "Nantes",
-    state: "Washington",
+    state: "WA",
     zipCode: "44000",
   },
   {
@@ -254,7 +254,7 @@ export const employeesListInit = [
     dateOfBirth: "1990-11-11",
     street: "Avenue des Champs-Élysées",
     city: "Bordeaux",
-    state: "Virginia",
+    state: "VA",
     zipCode: "33000",
   },
   {
@@ -265,7 +265,7 @@ export const employeesListInit = [
     dateOfBirth: "1987-05-15",
     street: "Rue de Rivoli",
     city: "Lille",
-    state: "Ohio",
+    state: "OH",
     zipCode: "59000",
   },
   {
@@ -276,7 +276,7 @@ export const employeesListInit = [
     dateOfBirth: "1993-09-25",
     street: "Avenue Jean Jaurès",
     city: "Strasbourg",
-    state: "Illinois",
+    state: "IL",
     zipCode: "67000",
   },
   {
@@ -287,7 +287,7 @@ export const employeesListInit = [
     dateOfBirth: "1980-07-05",
     street: "Rue de la République",
     city: "Nice",
-    state: "Arizona",
+    state: "AZ",
     zipCode: "06000",
   },
 ];
