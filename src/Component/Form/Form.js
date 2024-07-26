@@ -85,7 +85,7 @@ export default function Form(){
         <form className="form" onSubmit={handleAddFormSubmit}>
           <div className="formUpperPart">
             <label className="formLabel">
-              First name
+              First Name
               <input
                 className="formInput"
                 type="text"
@@ -95,7 +95,7 @@ export default function Form(){
               />
             </label>
             <label className="formLabel">
-              Last name
+              Last Name
               <input
                 className="formInput"
                 type="text"
@@ -105,7 +105,7 @@ export default function Form(){
               />
             </label>
             <label className="formLabel">
-              dateOfBirth
+              Date of Birth
               <input
                 className="formInput"
                 type="date"
@@ -127,7 +127,7 @@ export default function Form(){
           </div>
           <div className="fieldset">
             <label className="formLabel">
-              street
+              Street
               <input
                 className="formInput"
                 type="text"
@@ -137,7 +137,7 @@ export default function Form(){
               />
             </label>
             <label className="formLabel">
-              city
+              City
               <input
                 className="formInput"
                 type="text"
