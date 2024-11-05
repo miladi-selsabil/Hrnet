@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/miladi-selsabil.github.io/Hrnet/static/css/main.58e1ad18.css",
+    "main.js": "/miladi-selsabil.github.io/Hrnet/static/js/main.00c90170.js",
+    "static/js/453.9cd57cbb.chunk.js": "/miladi-selsabil.github.io/Hrnet/static/js/453.9cd57cbb.chunk.js",
+    "index.html": "/miladi-selsabil.github.io/Hrnet/index.html",
+    "main.58e1ad18.css.map": "/miladi-selsabil.github.io/Hrnet/static/css/main.58e1ad18.css.map",
+    "main.00c90170.js.map": "/miladi-selsabil.github.io/Hrnet/static/js/main.00c90170.js.map",
+    "453.9cd57cbb.chunk.js.map": "/miladi-selsabil.github.io/Hrnet/static/js/453.9cd57cbb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58e1ad18.css",
+    "static/js/main.00c90170.js"
+  ]
+}
